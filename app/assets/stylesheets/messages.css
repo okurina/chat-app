@@ -3,23 +3,54 @@
 
 }
 
+/****************サイドバー************/
 .side-bar{
   background-color: #253141;
   width: 300px;
   height: 100vh;
-  padding: 0 20px;
 }
 
 .side-bar-top{
   height: 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #253141;
+}
 
+.user_name a{
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.creat_chat a{
+  font-size: 10px;
+  color: deepskyblue;
+  border: lightblue solid 1px;
+  padding: 14px;
+  text-decoration: none;
 }
 
 .side-bar-main{
   background-color: #2f3e51;
   height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
 
 }
+
+.room {
+  padding: 20px 0 40px;
+}
+
+.room_name a {
+  text-decoration: none;
+  color: white;
+}
+
+/****************チャット************/
 
 .chat{
   width: calc(100vw - 300px);
